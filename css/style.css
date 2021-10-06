@@ -1,0 +1,129 @@
+html {
+  font-size: 15px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cards__card {
+  padding: 3.5rem;
+  height: 100%;
+  width: auto;
+}
+
+.cards__card--sedan {
+  background-color: #e38826;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cards__card--suvs {
+  background-color: #006970;
+}
+
+.cards__card--luxury {
+  background-color: #004241;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cards__heading {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", serif;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.cards__info {
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cards__btn {
+  background-color: #f2f2f2;
+  padding: 0.8rem 2rem;
+  margin-top: 6rem;
+  font-weight: 600;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cards__btn:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+.cards__btn--sedan {
+  color: #e38826;
+}
+
+.cards__btn--suvs {
+  color: #006970;
+}
+
+.cards__btn--luxury {
+  color: #004241;
+}
+
+.attribution {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    position: relative;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3] 0.2fr;
+        grid-template-rows: repeat(3, 1fr) 0.2fr;
+    top: 5rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .cards__card--sedan {
+    background-color: #e38826;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .cards__card--luxury {
+    background-color: #004241;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .cards__btn {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
