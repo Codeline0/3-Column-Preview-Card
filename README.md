@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution]()
--   [Live Site]()
+-   [Solution](https://www.frontendmentor.io/solutions/responsive-info-columns-using-html5-sass-and-bem-methodology-HBjqZymwc)
+-   [Live Site](https://codeline0.github.io/3-Column-Preview-Card/)
 
 ## My process
 
@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-Center and item without using flex or grid.
+Center an item without using flex or grid.
 
 ```css
 .cards {
